@@ -1,3 +1,15 @@
+Note: check you input.MC file, make sure there are no blank line in it.
+
+Otherwise, you will encounter some errors, like, ValueError: need more than 1 value to unpack
+
+---------------------------
+(three)$ conda activate mc
+
+(mc)$ python --version
+
+Python 2.7.18 :: Anaconda, Inc.
+
+
 # mpiPyMC
 
 A python based, MPI enabled, Monte-Carlo calculation of  2D Ising system using Metropolis algorithm.
@@ -22,10 +34,8 @@ intelmpi:https://software.intel.com/en-us/mpi-library
 ```
 
 Also, `numpy`, `matplotlib`, `tqdm` and `mpi4py` package are needed, you can install them by pip:
-```
-pip install matplotlib numpy mpi4py tqdm
-```
-or by conda
+
+pip do not work in my env, so install by conda
 ```
 conda install matplotlib numpy mpi4py tqdm
 ```
